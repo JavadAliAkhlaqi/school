@@ -1,5 +1,5 @@
 <?php
-include_once("../db_connection/connection.php");
+include_once("connection.php");
 
 			$title=$_GET["title"];
 
