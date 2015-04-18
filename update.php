@@ -1,5 +1,5 @@
 <?php
-include_once("../db_connection/connection.php");
+include_once("connection.php");
 $id=$_GET["id"];
 $name=$_GET["name"];
 $fname=$_GET["fname"];
