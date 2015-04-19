@@ -7,7 +7,7 @@ xmlhttp =new XMLHttpRequest();
 
 }
 function showClName(){
-	xmlhttp.open("GET","../import_component/showName.php");
+	xmlhttp.open("GET","showName.php");
 	xmlhttp.send(null);
 	xmlhttp.onreadystatechange=function(){
 		if(xmlhttp.status==200 && xmlhttp.readyState==4){
@@ -31,7 +31,7 @@ function insert(){alert("untill this step it is oke");
 	var grade=document.getElementById('selectError3').value;
 	var file=document.getElementById('fileInput1').value;
 
-	xmlhttp.open("GET","../import_component/insert_student.php?name="+name+"&fname="+fname+"&ssn="+ssn+"&brDate="+brDate+"&inDate="+inDate+"&grade="+grade+"&file="+file);
+	xmlhttp.open("GET","insert_student.php?name="+name+"&fname="+fname+"&ssn="+ssn+"&brDate="+brDate+"&inDate="+inDate+"&grade="+grade+"&file="+file);
 	xmlhttp.send();
 	xmlhttp.onreadystatechange=function  () {
 		// body...
@@ -53,7 +53,7 @@ function update_student(){
 	var grade=document.getElementById('selectError3').value;
 	var img=document.getElementById('fileInput1').value;
 	var id=document.getElementById('typeahead12').value;
-xmlhttp.open("GET","../import_component/update_student.php?name="+name+"&fname="+fname+"&ssn="+ssn+"&birthDate="+birthDate+"&startDate="+startDate+"&grade="+grade+"&img="+img+"&id="+id);
+xmlhttp.open("GET","update_student.php?name="+name+"&fname="+fname+"&ssn="+ssn+"&birthDate="+birthDate+"&startDate="+startDate+"&grade="+grade+"&img="+img+"&id="+id);
 xmlhttp.send();
 xmlhttp.onreadystatechange=function  () {
 	// body...
